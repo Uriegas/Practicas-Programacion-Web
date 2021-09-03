@@ -1,0 +1,60 @@
+html {
+  font-family: sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+caption {
+  padding: 10px;
+}
+
+.table-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.prog-web {
+  background-color: rgb(255,255,0) !important; 
+}
+
+.automatas {
+  background-color: rgb(0, 60, 255) !important;
+}
+
+.valores {
+  background-color: rgb(255, 108, 40) !important;
+}
+
+.proyectos {
+  background-color: rgb(0,255,0) !important;
+}
+
+.requisitos {
+  background-color: rgb(163, 244, 187) !important;
+}
