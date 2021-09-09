@@ -3,89 +3,91 @@
   <head>
     <meta charset="utf-8">
     <title>Simple table</title>
-    <link href="minimal-table.css" rel="stylesheet" type="text/css">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-		<div id="container">
+		<div id="container" class="container data">
 			<div id="left">
                 <h1>ITI 7-1</h1>
                 <h2>Eduardo Uriegas</h2>
-                <h3>Ciudad Victoria Tamaulipas</h3>
-                <h3><a href="mailto:1930526@upv.edu.mx">1930526@upv.edu.mx</a></h3>
-                <h3>(834) - 352-8863</h3>
+                <h3><a class="surrender">🇲🇽 Ciudad Victoria, Tamaulipas</a></h3>
+                <h3><a class="surrender" href="mailto:1930526@upv.edu.mx">✉️ 1930526@upv.edu.mx</a></h3>
+                <h3><a class="surrender">📱 (834) - 352-8863</a></h3>
 			</div>
             <div id="right">
                 <img src="img/upv-logo.png" alt="Eduardo Uriegas" width="150" height="150">
             </div>
 		</div>
-
-    <table>
-      <tr>
-        <td class="table-header">Hora</td>
-        <td class="table-header">Lunes</td>
-        <td class="table-header">Martes</td>
-        <td class="table-header">Miércoles</td>
-        <td class="table-header">Jueves</td>
-        <td class="table-header">Viernes</td>
-      </tr>
-      <tr>
-        <td>7:00 - 7:54</td>
-        <td rowspan="2" class="automatas">Lenguajes y Automatas</td>
-        <td rowspan="2" class="automatas">Lenguajes y Automatas</td>
-        <td rowspan="2" class="automatas">Lenguajes y Automatas</td>
-        <td rowspan="2" class="automatas">Lenguajes y Automatas</td>
-        <td rowspan="2" class="proyectos">Formulacion de Proyectos de Tecnologias de la Información</td>
-      </tr>
-      <tr>
-        <td>7:54 - 8:49</td>
-      </tr>
-      <tr>
-        <td>8:50 - 9:44</td>
-        <td colspan="5"></td>
-      </tr>
-      <tr>
-        <td>9:45 - 10:39</td>
-        <td></td>
-        <td class="prog-web">Programación Web</td>
-        <td class="prog-web">Programación Web</td>
-        <td class="prog-web">Programación Web</td>
-        <td class="prog-web">Programación Web</td>
-      </tr>
-      <tr>
-        <td>10:40 - 11:09</td>
-        <td colspan="7">Receso</td>
-      </tr>
-      <tr>
-        <td>11:10 - 12:04</td>
-        <td class="valores">Liderazgo de Equipos de Alto Desempeño</td>
-        <td class="valores">Liderazgo de Equipos de Alto Desempeño</td>
-        <td class="prog-web">Programación Web</td>
-        <td class="prog-web">Programación Web</td>
-        <td rowspan="2" class="valores">Liderazgo de Equipos de Alto Desempeño</td>
-      </tr>
-      <tr>
-        <td>12:05 - 12:59</td>
-        <td class="proyectos">Formulacion de Proyectos de Tecnologias de la Información</td>
-        <td class="proyectos">Formulacion de Proyectos de Tecnologias de la Información</td>
-        <td class="proyectos">Formulacion de Proyectos de Tecnologias de la Información</td>
-        <td class="proyectos">Liderazgo de Equipos de Alto Desempeño</td>
-      </tr>
-      <tr>
-        <td>13:00 - 13:54</td>
-        <td class="requisitos">Ingenieria de Requisitos</td>
-        <td class="requisitos">Ingenieria de Requisitos</td>
-        <td class="requisitos">Ingenieria de Requisitos</td>
-        <td class="requisitos">Ingenieria de Requisitos</td>
-        <td class="requisitos">Ingenieria de Requisitos</td>
-      </tr>
-      <tr>
-        <td class="table-header">Total Horas</td>
-        <td class="table-header">5</td>
-        <td class="table-header">6</td>
-        <td class="table-header">6</td>
-        <td class="table-header">6</td>
-        <td class="table-header">6</td>
-      </tr>
-    </table>
+    
+    <div class="container">
+      <table>
+        <tr>
+          <td class="table-header">Hora</td>
+          <td class="table-header">Lunes</td>
+          <td class="table-header">Martes</td>
+          <td class="table-header">Miércoles</td>
+          <td class="table-header">Jueves</td>
+          <td class="table-header">Viernes</td>
+        </tr>
+        <tr>
+          <td>7:00 - 7:54</td>
+          <td rowspan="2" class="automatas">Lenguajes y Automatas</td>
+          <td rowspan="2" class="automatas">Lenguajes y Automatas</td>
+          <td rowspan="2" class="automatas">Lenguajes y Automatas</td>
+          <td rowspan="2" class="automatas">Lenguajes y Automatas</td>
+          <td rowspan="2" class="proyectos">Formulacion de Proyectos de Tecnologias de la Información</td>
+        </tr>
+        <tr>
+          <td>7:54 - 8:49</td>
+        </tr>
+        <tr>
+          <td>8:50 - 9:44</td>
+          <td colspan="5"></td>
+        </tr>
+        <tr>
+          <td>9:45 - 10:39</td>
+          <td></td>
+          <td class="prog-web">Programación Web</td>
+          <td class="prog-web">Programación Web</td>
+          <td class="prog-web">Programación Web</td>
+          <td class="prog-web">Programación Web</td>
+        </tr>
+        <tr>
+          <td>10:40 - 11:09</td>
+          <td colspan="7">Receso</td>
+        </tr>
+        <tr>
+          <td>11:10 - 12:04</td>
+          <td class="valores">Liderazgo de Equipos de Alto Desempeño</td>
+          <td class="valores">Liderazgo de Equipos de Alto Desempeño</td>
+          <td class="prog-web">Programación Web</td>
+          <td class="prog-web">Programación Web</td>
+          <td rowspan="2" class="valores">Liderazgo de Equipos de Alto Desempeño</td>
+        </tr>
+        <tr>
+          <td>12:05 - 12:59</td>
+          <td class="proyectos">Formulacion de Proyectos de Tecnologias de la Información</td>
+          <td class="proyectos">Formulacion de Proyectos de Tecnologias de la Información</td>
+          <td class="proyectos">Formulacion de Proyectos de Tecnologias de la Información</td>
+          <td class="proyectos">Formulacion de Proyectos de Tecnologias de la Información</td>
+        </tr>
+        <tr>
+          <td>13:00 - 13:54</td>
+          <td class="requisitos">Ingenieria de Requisitos</td>
+          <td class="requisitos">Ingenieria de Requisitos</td>
+          <td class="requisitos">Ingenieria de Requisitos</td>
+          <td class="requisitos">Ingenieria de Requisitos</td>
+          <td class="requisitos">Ingenieria de Requisitos</td>
+        </tr>
+        <tr>
+          <td class="table-header">Total(hrs)</td>
+          <td class="table-header">5</td>
+          <td class="table-header">6</td>
+          <td class="table-header">6</td>
+          <td class="table-header">6</td>
+          <td class="table-header">6</td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
