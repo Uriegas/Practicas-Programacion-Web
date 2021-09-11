@@ -79,3 +79,37 @@ caption {
 #left, #middle, #right {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;}
 #left {width: 85%;}
 #right {width: 10%;}
+
+input.submit {
+  background-color: rgb(151, 86, 86);
+  color: rgb(24, 8, 8);
+}
+
+form {
+  margin: 0;
+  padding: 10px 5px;
+}
+
+textarea {
+  text-emphasis: none;
+  font-size: 1.2rem;
+}
+
+label {
+  font-size: 1.2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.rounded {
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+input[type="submit"] {
+  background-color: rgb(52, 221, 52);
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  border-color: black;
+}
