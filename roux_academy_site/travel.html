@@ -1,12 +1,11 @@
 <html lang="en">
-
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="styles/styles.css">
-	<title>Traveler Page</title>
+	<title>Schedule Page</title>
 </head>
 
-<body id="page_register">
+<body id="page_venue">
 	<div class="wrapper">
 		<header>
 			<div class="branding">
@@ -29,64 +28,45 @@
 		</header>
 		<div id="rotator"> <img src="img/art01.jpg" alt="Artwork from show"> </div>
 		<section id="main">
-			<article>
-				<h2>Register</h2>
-				<p>To attend the Roux Academy 2016 Contemporary Art Conference, please complete the information below.</p>
-			</article>
-			<article id="registrationform">
-				<form method="POST" enctype="text/plain">
-					<fieldset>
-						<legend>Personal Info</legend>
-						<ol>
-							<li>
-								<label for="myname">Name *</label>
-								<input type="text" name="myname" id="myname" autofocus placeholder="Last, First"
-									required>
-							</li>
-							<li>
-								<label for="companyname">Company Name</label>
-								<input type="text" name="companyname" id="companyname">
-							</li>
-							<li>
-								<label for="myemail">Email *</label>
-								<input type="email" name="myemail" id="myemail" required autocomplete="off">
-							</li>
-							<li>
-								<div class="grouphead">Request Type</div>
-								<ol>
-									<li>
-										<input type="radio" name="requesttype" value="question" id="question">
-										<label for="question">Question</label>
-									</li>
-									<li>
-										<input type="radio" name="requesttype" value="comment" id="comment">
-										<label for="comment">Comment</label>
-									</li>
-								</ol>
-							</li>
-							<li>
-								<label for="mycomments">Comment</label>
-								<textarea name="mycomments" id="mycomments"></textarea>
-							</li>
-							<li class="singleline">
-								<input type="checkbox" id="subscribe" name="subscribe" checked="" value="yes">
-								<label for="subscribe">Subscribe to our mailing list?</label>
-							</li>
-							<li>
-								<label for="reference">How did you hear about us?</label>
-								<select name="reference" id="reference">
-									<option>Choose...</option>
-									<option value="friend">A friend</option>
-									<option value="facebook">Facebook</option>
-									<option value="twitter">Twitter</option>
-									<option value="school">School</option>
-									<option value="internet">Other</option>
-								</select>
-							</li>
-						</ol>
-						<input type="submit" value="Send">
-					</fieldset>
-				</form>
+			<article id="hotellist">
+				<h2>The Venue</h2>
+				<ul>
+					<li>
+						<h3>Hotel Contempo</h3>
+						<p>
+							<img style="float:left; padding:0% 3%" src="img/hotel_contempo.jpg" alt="hotel_contempo">
+							CAC speaking events and gallery exhibits take place inside Hotel Contempo, at 309 1st Avenue, in Downtown Seattle. Just a walk to the Space Needle, and a sampling of restaurants and shopping makes the venue a much sought-after location for conferences, year after year. <br> <br> Hotel Contempo is the perfect spot for a gathering of modern artists. Not only are the conference rooms and halls decked with breathtaking contemporary art and sculptures, but the individual rooms are as unique as the renowned artists who were commissioned to decorate them. From the Ross Monroe Purple suite filled  wall to wall with paintings to the Tess Lessinger Sculpted Universe suite, with dozens of original sculptures, visitors are sure to be intrigued and comforted during their stay at Hotel Contempo.
+						</p>
+					</li>
+					<li>
+						<h3>Phillips of Bell town</h3>
+						<p>
+							<img style="float:left; padding:0% 3%" src="img/hotel_phillips.jpg" alt="phillips_of_belltown">
+							Situated amongst the hip, youthful culture of Downtown Seattle, Phillips of Belltown is a vibrant destination for art lovers. Choose from Jazz and Rock music at the various Jazz and Rock venues, or simply stroll through the many shops and eateries. Phillips of Belltown is a great place to spend a night surrounded by the sights and sounds of Downtown Seattle.
+						</p>
+					</li>
+					<li>
+						<h3>The Otter Renaissance Hotel</h3>
+						<p>
+							<img style="float:left; padding:0% 3%" src="img/hotel_otter.jpg" alt="otter_renaissance">
+							The Otter Renaissance Hotel is a boutique hotel in Seattle, Washington, that caters to the discerning business traveler, the discerning art lover, and the discerning lover of fine art. The hotel is located in the historic district of Belltown, just steps from the Seattle Art Museum and the Seattle Center. The Otter Renaissance Hotel is a short walk from the Seattle Center and the Seattle Art Museum.
+						</p>
+					</li>
+					<li>
+						<h3>The Rage Hotel</h3>
+						<p>
+							<img style="float:left; padding:0% 3%" src="img/hotel_rage.jpg" alt="rage_hotel">
+							The Rage Hotel is a boutique hotel in Seattle, Washington, that caters to the discerning business traveler, the discerning art lover, and the discerning lover of fine art. The hotel is located in the historic district of Belltown, just steps from the Seattle Art Museum and the Seattle Center. The Rage Hotel is a short walk from the Seattle Center and the Seattle Art Museum.
+						</p>
+					</li>
+					<li>
+						<h3>Gwendoline's Fancy</h3>
+						<p>
+							<img style="float:left; padding:0% 3%" src="img/hotel_gwendoline.jpg" alt="gwendoline_fancy">
+							Gwendoline's Fancy is a boutique hotel in Seattle, Washington, that caters to the discerning business traveler, the discerning art lover, and the discerning lover of fine art. The hotel is located in the historic district of Belltown, just steps from the Seattle Art Museum and the Seattle Center. The Gwendoline's Fancy is a short walk from the Seattle Center and the Seattle Art Museum.
+						</p>
+					</li>
+				</ul>
 			</article>
 		</section>
 
@@ -106,9 +86,16 @@
 						<li><img src="img/artists/Riley_Rewington_tn.jpg" alt="Riley Rewington"></li>
 						<li><img src="img/artists/Xhou_Ta_tn.jpg" alt="Xhou Ta"></li>
 					</ul>
-					<p><a class="link" href="../artists.php">Artist Info</a></p>
+					<p><a class="link" href="./artist.html">Artist Info</a></p>
 				</div>
 			</article>
+            <article>
+                <h2 style="color: rgb(186, 5, 5);">Coming to the event?</h2>
+                <h3>Check out our mobility site</h3>
+                <p>Our mobile site contains schedules and exhibits/ artist details, accessible simply by scanning QR codes located all around the venue exhibit halls.</p>
+                <img style="width: 80%;" src="img/iphone.png" alt="roux-iphone">
+                <p><a class="link" href="http://roux.arts.illinois.edu/">Roux Mobile</a></p>
+            </article>
 		</aside>
 
 		<footer>
@@ -124,5 +111,4 @@
 		</footer>
 	</div>
 </body>
-
 </html>
