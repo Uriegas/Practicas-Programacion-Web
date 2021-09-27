@@ -419,3 +419,39 @@ label[for=reference] {
 	padding-left: 70px;
 	padding-top: 15px
 }
+
+
+@media (max-width: 676px) {
+
+	.content {
+		display: block;
+		width: auto;
+	}
+	.description h1, nav {
+		font-size: 1.6em;
+	}
+	#sidebar article h2, #sidebar article h3, #sidebar article p, .content #main article h2, .content #main article h3, .content #main article p {
+		font-size: 2.2em;
+	}
+
+	.content #main article p img {
+		width: 400px;
+	}
+
+	#page_home .artistgroup ul {
+		width: 730px;
+	}
+	#page_home .artistgroup img {
+		width: 230px;
+	}
+
+	.content #main, .content #sidebar {
+		width: auto;
+		display: block;
+	}
+
+	#sidebar {
+		padding: 70px;
+	}
+	
+}

@@ -1,0 +1,152 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, a{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+body{
+    width: 1000px;
+    background-color: gray;
+    margin: 0 auto;
+}
+
+.contenedor{
+    background-color: white;
+    padding: 20px 40px;
+}
+
+.contenedor *{
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+
+header{
+    background-color: red;
+    height: 150px;
+}
+
+nav{
+    background-color: yellow;
+    height: 80px;
+    width: 800px;
+    float: right;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.centro{
+    display: flex;
+}
+
+main{
+    background-color: turquoise;
+    width: 70%;
+    margin-right: 20px;
+}
+
+main section{
+    height: 100px;
+}
+
+article{
+    background-color: green;
+}
+
+section{
+    background-color: yellowgreen;
+}
+
+aside{
+    background-color: orange;
+    width: 30%;
+}
+
+#segundo{
+    height: 300px;
+}
+
+.centro *{
+    padding: 10px;
+}
+
+footer{
+    background-color: aquamarine;
+    height: 90px;
+}
+
+@media (max-width: 1000px){
+    h1, a{
+        font-size: 21px;
+    }
+    body, header, .centro, footer{
+        width: auto;
+    }
+
+    .centro{
+        display: block;
+    }
+
+    main, aside{
+        width: auto;
+        margin-right: 0px;
+    }
+
+    nav{
+        width: 500px;
+    }
+}
+
+@media (max-width: 635px){
+    .contenedor{
+        padding: 0px;
+    }
+
+    h1, a{
+        font-size: 20px;
+    }
+    
+    header{
+        height: auto;
+        overflow: hidden;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    nav{
+        display: block;
+        float: none;
+        height: auto;
+        width: auto;
+        padding-right: 10px;
+    }
+
+    nav ul{
+        display: block;
+    }
+
+    a{
+        background-color: burlywood;
+        border-radius: 0px;
+        color: white;
+        display: block;
+        height: 30px;
+        list-style: 30px;
+        text-align: center;
+        margin-top: 2px;
+    }
+}
