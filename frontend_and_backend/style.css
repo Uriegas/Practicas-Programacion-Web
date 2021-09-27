@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, nav ul li a{
+    font-size: 30px;
+    font-weight: 100;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+body{
+    width: 1000px;
+    background-color: rgb(223, 153, 255);
+    margin: 0 auto;
+}
+
+.contenedor{
+    background-color: rgb(219, 250, 255);
+    padding: 20px 40px;
+}
+
+.contenedor *{
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+
+header{
+    background-color: rgb(160, 245, 48);
+    height: 250px;
+    display: block;
+	position: relative;
+}
+
+header p, header h1{
+    padding: 0px 150px;
+    position: relative;
+}
+header img {
+    position: absolute;
+    width: 100px;
+}
+
+nav{
+    background-color: rgb(18, 181, 12);
+    height: 100px;
+    width: 81%;
+    float: right;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+nav ul li{
+    text-decoration: none;
+}
+
+nav ul li a{
+    font-size: 25px;
+}
+
+.centro{
+    display: flex;
+}
+
+main{
+    background-color: turquoise;
+    width: 70%;
+    margin-right: 20px;
+}
+
+main section{
+    height: auto;
+}
+
+aside section{
+    width: auto;
+}
+
+aside iframe {
+    width: 90%;
+}
+
+article{
+    background-color: green;
+}
+
+section{
+    background-color: yellowgreen;
+    resize: none;
+}
+
+aside{
+    background-color: turquoise;
+    width: 30%;
+}
+
+.centro *{
+    padding: 10px;
+}
+
+footer{
+    background-color: aquamarine;
+    height: 40px;
+    text-align: center;
+}
+
+footer *{
+    font-size: large;
+}
+
+
+
+
+@media (max-width: 1000px){
+    h1{
+        font-size: 21px;
+    }
+    body, header, .centro, footer{
+        width: auto;
+    }
+
+    .centro{
+        display: block;
+    }
+
+    main, aside{
+        width: auto;
+        margin-right: 0px;
+    }
+
+    nav{
+        width: 500px;
+    }
+}
+
+@media (max-width: 635px){
+    .contenedor{
+        padding: 0px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+    
+    header{
+        height: auto;
+        overflow: hidden;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    nav{
+        display: block;
+        float: none;
+        height: auto;
+        width: auto;
+        padding-right: 10px;
+    }
+
+    nav ul{
+        display: block;
+    }
+
+    nav ul li a{
+        background-color: rgb(118, 228, 103);
+        border-radius: 0px;
+        display: block;
+        height: 30px;
+        list-style: 30px;
+        text-align: center;
+        margin-top: 2px;
+    }
+}
