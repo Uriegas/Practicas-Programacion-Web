@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1, nav ul li a{
@@ -9,13 +10,21 @@ h1, nav ul li a{
     color: black;
 }
 
+li {
+    list-style: none;
+}
+
+a:hover{
+    color :white;
+}
+
 a {
     color: black;
 }
 
 body{
     width: 1000px;
-    background-color: rgb(223, 153, 255);
+    background-image: linear-gradient(to right, rgb(174, 87, 214), rgb(255, 188, 188));
     margin: 0 auto;
 }
 
@@ -70,6 +79,12 @@ nav ul li a{
 
 .centro{
     display: flex;
+}
+
+.centro img {
+    width: 80%;
+    margin: auto;
+    display: block;
 }
 
 main{
