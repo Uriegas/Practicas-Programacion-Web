@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Tarifa en CFE</title>
+</head>
+<body>
+    <h1>Calculadora de Tarifa a pagar en CFE</h1>
+    <form onsubmit="submitEvent(event)">
+        <input type="number" id="kw" min="0">
+        <label for="quantity">kw</label>
+        <button onclick=submitEvent()>Submit</button>
+
+    </form>
+    <script>
+        function submitEvent(event){
+            var tarifas = [1, 3, 5]
+            event.preventDefault();
+            var kw = parseInt(document.getElementById("kw").value);
+            text = "Uso: " + kw + " kw\n";
+            // text += "El precio es de $"
+            if (kw > 600) {
+                text += "300 * $1\n300 * $3\n"
+                text += ((kw - 600) + " * $5\n")
+                text += "T1 $300\nT2 $900\nT3 " + ((kw -600) * tarifas[2]) + "\n\n"
+                text += "Total a pagar $" + (tarifas[0] * 300 + tarifas[1] * 300 + (kw - 600) * tarifas[2]);
+            } else if (kw > 300) {
+                text += "300 * $1\n"
+                text += ((kw - 300) + " * $3\n")
+                text += "T1 $300\nT2 $" + ((kw -300) * tarifas[1]) + "\n\n"
+                text += "Total a pagar $" + (tarifas[0] * 300 + (kw-300)*tarifas[1]);
+            } else {
+                text += kw + " * $1\n"
+                text += "T1 $" + kw * tarifas[0]
+                text += "\nTotal a pagar $" + tarifas[0]*kw;
+            }
+            alert(text)
+        }
+    </script>
+</body>
+</html>
