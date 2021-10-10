@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Calculator</h1>
+        </header>
+        <main>
+            <div id="bts">
+                <button id="suma" onclick=suma()>Suma</button>
+                <button id="resta" onclick=resta()>Resta</button>
+                <button id="mult" onclick=mult()>Mult</button>
+                <button id="div" onclick=div()>Div</button>
+                <button id="prom" onclick=prom()>Prom</button>
+                <button id="desv_std" onclick=desv_std()>Desv Std</button>
+            </div>
+            <div id="resultado">
+                <p>Resultado:</p>
+                <p id="res"></p>
+            </div>
+        </main>
+    </div>
+    <script>
+        function binary_operation_elements(op_name) {
+            if(!document.getElementById("operation")){
+                var input = document.createElement("input");
+                var input2 = document.createElement("input");
+                var button = document.createElement("button");
+                button.id = "operation";
+                button.innerHTML = op_name;
+                button.onclick = function() {
+                    var res;
+                    switch(button.innerHTML){
+                        case "Suma":
+                            res = parseFloat(input.value) + parseFloat(input2.value);
+                            break;
+                        case "Resta":
+                            res = parseFloat(input.value) - parseFloat(input2.value);
+                            break;
+                        case "Mult":
+                            res = parseFloat(input.value) * parseFloat(input2.value);
+                            break;
+                        case "Div":
+                            res = parseFloat(input.value) / parseFloat(input2.value);
+                            break;
+                    }
+                    document.getElementById("res").innerHTML = res;
+                };
+            }else{
+                document.getElementById("operation").innerHTML = op_name;
+            }
+            document.getElementById("resultado").insertBefore(input, document.getElementById("resultado").childNodes[0]);
+            document.getElementById("resultado").insertBefore(input2, document.getElementById("resultado").childNodes[1]);
+            document.getElementById("resultado").insertBefore(button, document.getElementById("resultado").childNodes[2]);
+        }
+        function suma(event) {
+            binary_operation_elements("Suma");
+        }
+        function resta(event) {
+            binary_operation_elements("Resta");
+        }
+        function mult(event) {
+            binary_operation_elements("Mult");
+        }
+        function div(event) {
+            binary_operation_elements("Div");
+        }
+        function prom(event) {
+            var tag = document.getElementById("resultado")
+            while (tag.firstChild) {//remove all elements from tag
+                tag.removeChild(tag.firstChild);
+            }
+            //Add result elements to tag
+            var result = document.createElement("p");
+            var result_text = document.createElement("p");
+            result_text.innerHTML = "Resultado: ";
+            result.id = "res";
+            tag.appendChild(result_text);
+            tag.appendChild(result);
+    
+            //Prom user to enter number of elements
+            var n_data = prompt("Introduce the number of data to enter");
+            //Add input elements to tag
+            for(var i = 0; i < n_data; i++){
+                var input = document.createElement("input");
+                tag.insertBefore(input, result_text);
+            }
+            //Add button to tag
+            var button = document.createElement("button");
+            button.id = "operation";
+            button.innerHTML = "Prom";
+            button.onclick = function() {
+                var res = 0;
+                for(var i = 0; i < n_data; i++){
+                    res += parseFloat(document.getElementsByTagName("input")[i].value);
+                }
+                document.getElementById("res").innerHTML = res/n_data;
+            };
+            tag.insertBefore(button, result_text);
+        }
+        function desv_std(event) {
+            var tag = document.getElementById("resultado")
+            while (tag.firstChild) {//remove all elements from tag
+                tag.removeChild(tag.firstChild);
+            }
+            //Add result elements to tag
+            var result = document.createElement("p");
+            var result_text = document.createElement("p");
+            result_text.innerHTML = "Resultado: ";
+            result.id = "res";
+            tag.appendChild(result_text);
+            tag.appendChild(result);
+    
+            //Prom user to enter number of elements
+            var n_data = prompt("Introduce the number of data to enter");
+            //Add input elements to tag
+            for(var i = 0; i < n_data; i++){
+                var input = document.createElement("input");
+                tag.insertBefore(input, result_text);
+            }
+            //Add button to tag
+            var button = document.createElement("button");
+            button.id = "operation";
+            button.innerHTML = "Desv Std";
+            button.onclick = function() {
+                var res = 0;
+                for(var i = 0; i < n_data; i++){
+                    res += Math.pow(parseFloat(document.getElementsByTagName("input")[i].value), 2);
+                }
+                res = Math.sqrt(res/n_data);
+                document.getElementById("res").innerHTML = res;
+            };
+            tag.insertBefore(button, result_text);
+        }
+    </script>
+</body>
+</html>
