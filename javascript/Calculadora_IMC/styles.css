@@ -1,3 +1,44 @@
-* {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+img {
+    height: 300px;
+}
+body {
+    display: flex;
+    width: 640px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: arial,sans-serif;
+    font-size: 18px;
+}
+button, input {
+    background-color: #19191c;
+    border: 1px solid #3c3d41;
+    color: #e8eaed;
+    height: 40px;
+    width: 150px;
+    border-radius: 15px;
+}
+#wrapper{
+    padding: auto;
+    margin: auto;
+    display: flex;
+}
+#result{
+    display: block;
+    padding: 5%;
+    text-align: center;
+    width: 50%;
+}
+#data{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 50%;
+}
+#data *{
+    padding: 4%;
+    /* Fuda shi seo in the fash nitsa */
 }
